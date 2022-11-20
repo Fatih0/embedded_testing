@@ -1,0 +1,17 @@
+5.Let's say you want about 30 hardware modules to communicate with each other. 
+There is one STM32 microcontroller on each module, and the modules can be removed and installed instantly.
+Which communication standard would you use for these modules to communicate effectively with each other? Why?
+
+Can bus communaciton. Becase you can add device or remove device from the system anytime. All device can communicate each other.
+Always you can add device to system. You dont need master-slave system. For example you want to add the display in your car. 
+You can add and set up easily. Because canbus give you this chance.
+
+4.Let's assume that there is a hardware module that is attached to the motherboard with a mezzanine connector.
+Due to the small form factor, the number of pins on the mezzanine connector is much less than the number of pins you need. 
+Assuming that the communication speed is not important, how would you solve this problem?
+
+ we can use pin expander. So we have lots of gpio.
+ We can use mux to read the datas.
+ It is necessary communicate from gpio pins.
+ 
+ 
